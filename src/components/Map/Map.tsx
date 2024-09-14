@@ -61,6 +61,7 @@ const Map: React.FC = () => {
         options={{
           styles: mapStyles,
             disableDefaultUI: true, // すべてのデフォルトUIを無効化
+            gestureHandling: "cooperative"
         }}
       >
       </GoogleMap>
