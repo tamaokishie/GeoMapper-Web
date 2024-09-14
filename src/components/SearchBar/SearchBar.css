@@ -1,5 +1,13 @@
 .searchBar {
-    width: 90%; /* 幅を90%に設定 */
-    margin: 10px auto; /* 中央に配置し、上下にマージンを追加 */
-  }
-  
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  z-index: 10;
+}
+
+.searchBarProps{
+  background-color: white;
+  border-radius: 4px;
+}

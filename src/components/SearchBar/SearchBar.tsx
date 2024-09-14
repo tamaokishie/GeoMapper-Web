@@ -32,7 +32,7 @@ export default function SearchBar() {
         );
       }}
       renderInput={(params) => (
-        <TextField
+        <TextField className='searchBarProps'
           {...params}
           label="Choose a country"
           slotProps={{
