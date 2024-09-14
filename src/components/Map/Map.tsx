@@ -59,7 +59,8 @@ const Map: React.FC = () => {
         zoom={2}
         onLoad={onLoad}
         options={{
-          styles: mapStyles,  // ここでカスタムスタイルを適用
+          styles: mapStyles,
+            disableDefaultUI: true, // すべてのデフォルトUIを無効化
         }}
       >
       </GoogleMap>
