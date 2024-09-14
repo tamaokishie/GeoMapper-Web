@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/geo-mapper/static/css/main.901742bd.css",
-    "main.js": "/geo-mapper/static/js/main.6fa566f9.js",
-    "static/js/453.16b4fcb9.chunk.js": "/geo-mapper/static/js/453.16b4fcb9.chunk.js",
-    "static/media/IMG_9209.jpg": "/geo-mapper/static/media/IMG_9209.523d22c9575dd195efc4.jpg",
-    "index.html": "/geo-mapper/index.html",
-    "main.901742bd.css.map": "/geo-mapper/static/css/main.901742bd.css.map",
-    "main.6fa566f9.js.map": "/geo-mapper/static/js/main.6fa566f9.js.map",
-    "453.16b4fcb9.chunk.js.map": "/geo-mapper/static/js/453.16b4fcb9.chunk.js.map"
+    "main.css": "/geomapper-web/static/css/main.f2bd6317.css",
+    "main.js": "/geomapper-web/static/js/main.d8cfb5cf.js",
+    "static/js/453.a69172d8.chunk.js": "/geomapper-web/static/js/453.a69172d8.chunk.js",
+    "index.html": "/geomapper-web/index.html",
+    "main.f2bd6317.css.map": "/geomapper-web/static/css/main.f2bd6317.css.map",
+    "main.d8cfb5cf.js.map": "/geomapper-web/static/js/main.d8cfb5cf.js.map",
+    "453.a69172d8.chunk.js.map": "/geomapper-web/static/js/453.a69172d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.901742bd.css",
-    "static/js/main.6fa566f9.js"
+    "static/css/main.f2bd6317.css",
+    "static/js/main.d8cfb5cf.js"
   ]
 }
