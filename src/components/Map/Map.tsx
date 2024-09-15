@@ -11,8 +11,7 @@ const center = {
   lng: 0,
 };
 
-const mapId = '1689dbf0bb3421fa';
-const apiKey = 'AIzaSyCOAicFUL1DVz0dhMwOX58PG9uKMqC4njI';
+const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY as string;
 
 const mapStyles = [
   {
