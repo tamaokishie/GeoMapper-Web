@@ -1,9 +1,11 @@
 .map-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-  }
+ 
+  width: 100%;
+  height: 100%;
+  background-color: #5773ff !important; /* 背景色を強制適用 */
+  z-index: 1;
+}
+
+.gm-style {
+  background-color: transparent !important; /* Google Mapsのデフォルト背景を透明に */
+}

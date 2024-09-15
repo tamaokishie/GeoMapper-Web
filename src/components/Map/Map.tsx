@@ -1,70 +1,50 @@
 import React from 'react';
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import './Map.css';
+import mapStyle from '../../style/mapStyle.json';
 
 const mapContainerStyle = {
   width: '100%',
-  height: '100vh',
+  height: '48vh',
 };
 
 const center = {
-  lat: 20,
+  lat: 0,
   lng: 0,
 };
 
 const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY as string;
 
-const mapStyles = [
-  {
-    "featureType": "landscape",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#ffffff"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "stylers": [
-      {
-        "color": "#ededed"
-      },
-      {
-        "weight": 0.5
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "stylers": [
-      {
-        "color": "#5773ff"
-      }
-    ]
-  }
-];
-
 const Map: React.FC = () => {
-
-    const onLoad = (map: google.maps.Map) => {
-      console.log('Map loaded:', map);
-    };
-
   return (
-    <LoadScript googleMapsApiKey={apiKey}>
-      <GoogleMap
-        mapContainerStyle={mapContainerStyle}
-        center={center}
-        zoom={2}
-        onLoad={onLoad}
-        options={{
-          styles: mapStyles,
+    <div className="map-container">
+      <LoadScript googleMapsApiKey={apiKey}>
+        <GoogleMap
+          mapContainerStyle={{
+            ...mapContainerStyle,
+          }}
+          center={center}
+          zoom={0.5}
+          options={{
+            styles: mapStyle,
             disableDefaultUI: true,
-            gestureHandling: "greedy"
-        }}
-      >
-      </GoogleMap>
-    </LoadScript>
+            gestureHandling: "none",
+          }}
+        />
+      </LoadScript>
+      <div style={{
+        position: 'absolute', 
+        top: '55%',
+        bottom: 0, 
+        width: '100%',
+        paddingTop: '5%',
+        backgroundColor: 'white',
+        color: 'black',
+        textAlign: 'center',
+      }}>
+        Good job!<br/>You have traveled to many countries.
+      </div>
+    </div>
   );
 };
 
