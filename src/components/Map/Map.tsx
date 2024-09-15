@@ -5,7 +5,7 @@ import mapStyle from '../../style/mapStyle.json';
 
 const mapContainerStyle = {
   width: '100%',
-  height: '48vh',
+  height: '46vh',
 };
 
 const center = {
@@ -24,7 +24,7 @@ const Map: React.FC = () => {
             ...mapContainerStyle,
           }}
           center={center}
-          zoom={0.5}
+          zoom={0.6}
           options={{
             styles: mapStyle,
             disableDefaultUI: true,
@@ -34,7 +34,7 @@ const Map: React.FC = () => {
       </LoadScript>
       <div style={{
         position: 'absolute', 
-        top: '55%',
+        top: '54%',
         bottom: 0, 
         width: '100%',
         paddingTop: '5%',
