@@ -5,7 +5,7 @@ import mapStyle from '../../style/mapStyle.json';
 
 const mapContainerStyle = {
   width: '100%',
-  height: '46vh',
+  height: '47vh',
 };
 
 const center = {
