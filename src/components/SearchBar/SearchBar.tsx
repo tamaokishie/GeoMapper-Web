@@ -38,7 +38,7 @@ export default function SearchBar() {
           slotProps={{
             htmlInput: {
               ...params.inputProps,
-              autoComplete: 'new-password', // disable autocomplete and autofill
+              autoComplete: 'new-password',
             },
           }}
         />
