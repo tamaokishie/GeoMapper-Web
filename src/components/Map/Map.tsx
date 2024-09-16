@@ -27,8 +27,18 @@ const Map: React.FC = () => {
           options={{
             styles: mapStyle,
             disableDefaultUI: true,
-            gestureHandling: "greedy", 
-            minZoom: 0.6,
+            gestureHandling: "greedy",  // Allow zooming gestures
+            maxZoom: 10,                // Set the maximum zoom level
+            minZoom: 0.4,               // Set the minimum zoom level
+            restriction: {
+              latLngBounds: {
+                north: 85,     // Define the northernmost boundary (top)
+                south: -85,    // Define the southernmost boundary (bottom)
+                west: -180,    // Define the westernmost boundary (left)
+                east: 180,     // Define the easternmost boundary (right)
+              },
+              strictBounds: false, // This ensures you cannot pan outside the defined bounds
+            },
           }}
         />
       </LoadScript>
