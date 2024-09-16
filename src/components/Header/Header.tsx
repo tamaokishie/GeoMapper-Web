@@ -10,7 +10,7 @@ const Header = () => {
     <header className="header">
       <ArrowBackIosIcon className="back-icon" style={{ fontSize: '26px' }}/>
       <div className="text-container">
-        <span className="geoMapper">GeoMapper</span>
+        <span className="geoMapper">Global Status</span>
         {/* <span className="global" style={{ marginRight: '5px' }}>global</span>
         <NextIcon className="next-icon" style={{ fontSize: '14px' }}/> */}
       </div>
