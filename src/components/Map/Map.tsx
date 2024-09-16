@@ -27,7 +27,8 @@ const Map: React.FC = () => {
           options={{
             styles: mapStyle,
             disableDefaultUI: true,
-            gestureHandling: "none",
+            gestureHandling: "greedy", 
+            minZoom: 0.6,
           }}
         />
       </LoadScript>
