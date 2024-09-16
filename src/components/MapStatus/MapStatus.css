@@ -1,0 +1,47 @@
+.status-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .status-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .status-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid black;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .purple {
+    background-color: purple;
+  }
+  
+  .white {
+    background-color: lightgray;
+  }
+  
+  .status-level {
+    margin-left: auto;
+  }
+  

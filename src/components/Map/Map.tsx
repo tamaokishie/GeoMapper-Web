@@ -2,6 +2,7 @@ import React from 'react';
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import './Map.css';
 import mapStyle from '../../style/mapStyle.json';
+import MapStatus from '../MapStatus/MapStatus';
 
 const mapContainerStyle = {
   width: '100%',
@@ -20,9 +21,7 @@ const Map: React.FC = () => {
     <div className="map-container">
       <LoadScript googleMapsApiKey={apiKey}>
         <GoogleMap
-          mapContainerStyle={{
-            ...mapContainerStyle,
-          }}
+          mapContainerStyle={mapContainerStyle}
           center={center}
           zoom={0.6}
           options={{
@@ -43,6 +42,12 @@ const Map: React.FC = () => {
         textAlign: 'center',
       }}>
         Good job!<br/>You have traveled to many countries.
+
+        <div style={{ paddingTop: '20px', fontSize: '24px', fontWeight: 'bold' }}>
+          Level 150
+        </div>
+
+        <MapStatus />
       </div>
     </div>
   );
