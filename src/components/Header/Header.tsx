@@ -16,7 +16,7 @@ const Header = () => {
       </div>
       <PushPinIcon className="pin-icon" style={{ fontSize: '26px' }}/>
     </header>
-  );
+  ); 
 };
 
 export default Header;
